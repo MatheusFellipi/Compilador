@@ -1,0 +1,57 @@
+﻿import java.io.File;import java.io.FileInputStream;
+public enum TipoToken {
+    PalavraChaveDeclaraçoes,    PalavraCHaveAlgoritimo,
+    PCInteiro,    PcAtributo,
+    PCImprimir,    PcInicio,
+    PCFim,    PcEnquanto,
+    PCSe,    PCEntao,
+    OprAritSoma,    OprAritSub,
+    OprAritMult,    OprAritDiv,
+    OprRelMenor,    OprRelMenorIgual,
+    OprRelMaior,    OprRelMaiorIqual,
+    OprRelIgual,    OprRelDif,
+    OprBooLe,    OprBoolOum,
+    Delim,    AbreBat, FecharBar, NumInt, NumReal, Fim, Cadeia, Inicio,
+}
+public class Mavenproject2 {
+    public static void main(String[] args) {        System.out.println("Hello World!");
+    }}
+
+public class Token {
+    public TipoToken Nome;    public String Lexema;
+    public Token(TipoToken nome, String lexema) {
+        this.Nome = nome;        this.Lexema = lexema;
+    }
+    public String ToString() {        return "<" + Nome + ", " + Lexema + ">";
+    }}
+public class Entrada {
+    InputStream InputArquivo;
+    public Entrada(String arquivo) {
+        try {
+            InputArquivo = new FileInputStream(new File(arquivo));        } catch (Exception e) {
+            e.printStackTrace();        }
+    }
+    public int LerProximoChar() {
+        try {            int i = InputArquivo.read();
+            System.out.println((char) i);            return i;
+        } catch (Exception e) {            return -1;
+        }    }
+}
+public class Analisador {
+    Entrada Ent;
+    public Analisador(String arquivo) {        Ent = new Entrada(arquivo);
+    }
+    public Token ProximoToken() {        int CaractereLido = -1;
+        while ((CaractereLido = Ent.LerProximoChar()) != -1) {
+           char c = (char)CaractereLido;           if (c == ' ' || c == '\n') continue;
+           if (c== ':'){               return new Token(TipoToken.Delim, c); 
+           }else if (c== '+'){               return new Token (TipoToken.OprAritSoma, "+");
+           }else if (c == '<'){               c = (char)Ent.LerProximoChar();
+               if (c == '>'){                   return new Token(TipoToken.OprAritDiv, "<>");
+               }               else if(c == '='){
+                  return new Token(TipoToken.OprRelMenorIgual, "<=");               }
+               else {                   return new Token(TipoToken.OprRelMenor, "<");
+               }           }
+                   }
+    }
+}
