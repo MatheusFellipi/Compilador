@@ -1,0 +1,5 @@
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.AssemblyInfoInputs.cache
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.AssemblyInfo.cs
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.csproj.CoreCompileInputs.cache
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.sourcelink.json
