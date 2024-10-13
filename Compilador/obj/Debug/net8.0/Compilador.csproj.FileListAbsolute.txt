@@ -3,3 +3,13 @@ C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.As
 C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.AssemblyInfo.cs
 C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.csproj.CoreCompileInputs.cache
 C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.sourcelink.json
+C:\Users\mathe\source\repos\Compilador\Compilador\bin\Debug\net8.0\Compilador.exe
+C:\Users\mathe\source\repos\Compilador\Compilador\bin\Debug\net8.0\Compilador.deps.json
+C:\Users\mathe\source\repos\Compilador\Compilador\bin\Debug\net8.0\Compilador.runtimeconfig.json
+C:\Users\mathe\source\repos\Compilador\Compilador\bin\Debug\net8.0\Compilador.dll
+C:\Users\mathe\source\repos\Compilador\Compilador\bin\Debug\net8.0\Compilador.pdb
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.dll
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\refint\Compilador.dll
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.pdb
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\Compilador.genruntimeconfig.cache
+C:\Users\mathe\source\repos\Compilador\Compilador\obj\Debug\net8.0\ref\Compilador.dll

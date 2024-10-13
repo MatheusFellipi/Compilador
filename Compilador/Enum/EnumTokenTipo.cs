@@ -2,43 +2,32 @@
 {
     public enum EnumTokenTipo
     {
-        // Operadores de comparação
-        OprLogIgual,      // Representa o operador "="
-        OprLogDiff,       // Representa o operador "!=" ou "<>"
-        OprLogMenor,      // Representa o operador "<"
-        OprLogMaior,      // Representa o operador ">"
-        OprLogMenorIgual, // Representa o operador "<="
-        OprLogMaiorIgual, // Representa o operador ">="
+        Valor,                      // Representa um número (como o valor 1)
+        IdentificadorTabela,          // Representa o nome da tabela
+        IdentificadorTabelaAtributos, // Representa o atributo da tabela
+        Eof,                         // Fim da consulta (End Of File)
 
-        // Operadores lógicos
-        OprLogE,          // Representa o operador "AND" "&&" "E"
-        OprLogOu,         // Representa o operador "OR" "||" "OU"
-        OprLogNao,        // Representa o operador "NOT" "!" "Ñ" "NAO"
+        PesquisaSelecione,       // Representa o comando "Selecione"
+        PesquisaQuePossui,       // Representa o comando "que possui" (equivalente ao WHERE)
+        PesquisaOrdenadoPor,     // Representa "ordenado por" (equivalente ao ORDER BY)
+        PesquisaAgrupadoPor,     // Representa "agrupar por" (equivalente ao GROUP BY)
+        PesquisaConte,           // Representa "Conte" (equivalente ao COUNT)
+        PesquisaSomar,            // Representa "Somar" (equivalente ao SUM)
 
-        // Operadores de atribuição
-        OprAtribuicao,    // Representa o operador "=" para atribuição
 
-        // Operadores aritméticos
-        OprAritSoma,      // Representa o operador "+"
-        OprAritSubtracao, // Representa o operador "-"
-        OprAritMultiplicacao, // Representa o operador "*"
-        OprAritDivisao,   // Representa o operador "/"
+        OprLogCompIgualA,        // Representa "é" ou "igual a" (equivalente ao operador =)
+        OprLogCompMaiorQue,      // Representa "maior que" (equivalente ao operador >)
+        OprLogCompMenorQue,      // Representa "menor que" (equivalente ao operador <)
+        OprLogCompDiferenteDe,   // Representa "diferente de" (equivalente ao operador !=)
+        OprLogCompContem,        // Representa "contém" (equivalente ao LIKE %valor%)
+        OprLogCompComecaCom,     // Representa "começa com" (equivalente ao LIKE valor%)
+        OprLogCompMenorIgual,    // Representa o operador "<="
+        OprLogCompMaiorIgual,    // Representa o operador ">="
 
-        // Outros operadores
-        OprLike,          // Representa o operador "LIKE" usado para padrões
-        OprIn,            // Representa o operador "IN" usado para listas
-        OprBetween,
-
-        // Palavras-Chaves
-        PesquisaSelect,
-        PesquisaFrom,
-        PesquisaWhere,
-
-        // Identificadores (números, nomes de tabelas, etc.)
-        Identificador, // Representa nomes de tabelas, colunas ou outros identificadores
-        Numero,        // Representa um número (como o valor 1)
-
-        // Fim da consulta
-        Eof            // Fim da consulta (End Of File)
+        OprE,           // Representa "e" (equivalente ao operador AND)
+        OprOu,          // Representa "ou" (equivalente ao operador OR)
+        OprLogE,        // Representa o operador "AND" "&&" "E"
+        OprLogOu,       // Representa o operador "OR" "||" "OU"
+        OprLogNao       // Representa o operador "NOT" "!" "Ñ" "NAO"
     }
 }

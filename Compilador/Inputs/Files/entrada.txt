@@ -1,0 +1,6 @@
+﻿Selecione :pessoa que possui ::cidade "São Paulo" ordenado por "idade" decrescente
+
+>= <>
+>   =
+<
+<=
