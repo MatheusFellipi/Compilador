@@ -1,6 +1,31 @@
-﻿Selecione :pessoa que possui ::cidade "São Paulo" ordenado por "idade" decrescente
+Selecione
+que possui
+ordenado por
+agrupar por
+conte
+somar
 
->= <>
->   =
-<
-<=
+e E
+ou
+nao ! ñ
+
+= igual 
+maior quer >
+menor quer <
+diferente != <>
+contém contem
+começa com comeca com
+menor igual <=
+maior igual >=
+
+decrescente desc DESC
+crescente asc ASC
+
+@tabelas
+@pessoa
+@empresa
+
+:atributos :Atributos
+:Cidade :cidade
+"Sao Paulo"
+"Idade"
